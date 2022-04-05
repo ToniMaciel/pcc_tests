@@ -17,6 +17,10 @@ Dessa forma, para os ajustes no texto, siga os seguintes passos:
 ```bash 
   gzip -d <nome_do_arquivo> 
   ```
+3. Para ajustar o texto conforme discutido, execute o seguinte script:
+```bash
+  python3 <nome_script>.py <nome_do_arquivo>
+  ```
 ---
 
 ## Experimentos de corretude
