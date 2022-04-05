@@ -19,7 +19,7 @@ Dessa forma, para os ajustes no texto, siga os seguintes passos:
   ```
 3. Para ajustar o texto conforme discutido, execute o seguinte script:
 ```bash
-  python3 <nome_script>.py <nome_do_arquivo>
+  python3 clean_text.py <nome_do_arquivo>
   ```
 ---
 
@@ -27,12 +27,12 @@ Dessa forma, para os ajustes no texto, siga os seguintes passos:
 
 Para executar os testes para os alogritmos de match exato:
 ```bash
-  python3 <nome_script>.py <nome_do_arquivo>
+  python3 corretude_exato.py <nome_do_arquivo>
   ```
 
 Já para os algortimos de match aproximado:
 ```bash
-  python3 <nome_script>.py <nome_do_arquivo>
+  python3 corretude_aproximado.py <nome_do_arquivo>
   ```
  
 Ao final de cada execução, haverá uma sinalização para cada erro de corretude encontrado na nossa ferramenta. Se nenhum output for sinalizado, então não houve nenhum tipo de erro detectado.
@@ -43,16 +43,16 @@ Ao final de cada execução, haverá uma sinalização para cada erro de corretu
 
 Para executar o experimento de desempenho para os alogritmos de match exato:
 ```bash
-  python3 <nome_script>.py <nome_do_arquivo>
+  python3 desempenho_exato.py <nome_do_arquivo>
   ```
 
 Para o experimento de desempenho dos algortimos de match aproximado:
 ```bash
-  python3 <nome_script>.py <nome_do_arquivo>
+  python3 desempenho_aproximado.py <nome_do_arquivo>
   ```
 
 Para o experimento de desempenho dos algortimos match exato com múltiplos padrões:
 ```bash
-  python3 <nome_script>.py <nome_do_arquivo>
+  python3 desempenho_multiplos.py <nome_do_arquivo>
   ```
 Para cada uma dessas execuções, será produzido um txt que vai detalhar o tempo necessário para cada tamanho de padrão ou quantidade de padrões para o caso de múltiplos padrões. Infelizmente, por limitações de tempo, os dados são expostos de forma bruta, de modo que só são apresentados de forma compilada no relatório da disciplina, Reconhecemos essa limitação e sentimos muito que a reprodução do experimento não acontecerá da forma facilitada como desejávamos.
