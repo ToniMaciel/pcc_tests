@@ -6,6 +6,18 @@ No seguinte [link](http://pizzachili.dcc.uchile.cl/texts/nlang/) é possível en
 
 ---
 
+## Aviso
+
+Um necessário adendo é que a rodagem dos scripts pode tomar algum tempo. Tendo isso em vista, optamos por construir um dataset reduzido e um completo. Para os resultados mostrados no relatório, os dataset usados foram os completos, mas dentro do script estão sinalizados os dataset reduzidos, para proporcionar mais rapidez na execução.
+
+Caso deseje realizar a troca para o dataset completo (ou criar uma adaptação à sua preferência, apenas se atentando ao estilo de escrita dos dataset) é possível fazer a troca seguindo o exemplo a seguir:
+
+Suponha que você vá mudar o dataset do script **corretude_aproximado.py**, então você deve ir até o arquivo e modificar todas as ocorrências de **patterns_aproximados.txt** para **patterns_aproximados_full.txt**.
+
+De forma semelhante pode ser possível mudar o dataset de cada script de acordo com as adaptações necessárias.
+
+---
+
 ## Ajustes no texto
 
 Os textos possuem alguns caracteres fora do limite ASCII, de modo que foi necessário o uso de um script que eliminará cada linha que possui esses caracteres. Não processar esse texto, levará a respostas distintas em relação à corretude, visto que ferramentas cocmo grep não irão contabilizar matchs do padrão em linhas que possuem caracteres fora do ASCII.
