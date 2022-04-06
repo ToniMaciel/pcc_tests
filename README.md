@@ -67,4 +67,8 @@ Para o experimento de desempenho dos algortimos match exato com múltiplos padr�
 ```bash
   python3 desempenho_multiplos.py <nome_do_arquivo>
   ```
-Para cada uma dessas execuções, será produzido um txt que vai detalhar o tempo necessário para cada tamanho de padrão ou quantidade de padrões para o caso de múltiplos padrões. Infelizmente, por limitações de tempo, os dados são expostos de forma bruta, de modo que só são apresentados de forma compilada no relatório da disciplina, Reconhecemos essa limitação e sentimos muito que a reprodução do experimento não acontecerá da forma facilitada como desejávamos.
+Para cada uma dessas execuções, será produzido um txt (de mesmo nome que o script executado) que vai detalhar o tempo necessário para cada tamanho de padrão ou quantidade de padrões, no caso de múltiplos padrões. Na primeira linha de cada outpút produzido está a ordem na qual os algoritmos foram executados, e portanto,
+todos os resultados daquela coluna dizem respeito a execução daquele algoritmo.
+
+Infelizmente, por limitações de tempo, não conseguimos refinar os resultados de forma automatizada, de modo esses são expostos de forma bruta. Uma visão detalhada
+desses resultados pode ser encontrada no relatório do projeto, onde nós compilamos e trabalhamos melhor o significado de cada execução. Reconhecemos essa limitação e sentimos muito que a reprodução do experimento não acontecerá da forma facilitada como desejávamos.
