@@ -9,7 +9,7 @@ def main():
         for line in lines:
             line = line.replace('\n', "")
             if "*" not in line:
-                for max_error in [2, 4, 5]:
+                for max_error in [2, 4]:
                     for algo in ['sellers', 'wu_manber']:
                         if(len(line) > 64 and algo == 'wu_manber'):
                             continue

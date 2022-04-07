@@ -1,10 +1,8 @@
-*4*
-policy
+*5*
+music
 *7*
 outcome
-*8*
-category
 *9*
-recording
-*14*
-relationship
+equipment
+*12*
+manufacturer
