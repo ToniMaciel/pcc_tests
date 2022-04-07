@@ -1,8 +1,9 @@
 import subprocess, sys
 
 def main():
-    text_file = sys.argv[1]
-    with open('./dataset/patterns_multi.txt', 'r') as f:
+    pattern_file = sys.argv[1]
+    text_file = sys.argv[2]
+    with open(pattern_file, 'r') as f:
         total = []
         total.append(['grep', 'sliding_window', 'kmp', 'aho_corasick', 'shift_or'])
         lines = f.readlines()

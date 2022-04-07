@@ -1,8 +1,9 @@
 import subprocess, sys
 
 def main():
-    text_file = sys.argv[1]
-    with open('./dataset/patterns_exato.txt', 'r') as f:
+    pattern_file = sys.argv[1]
+    text_file = sys.argv[2]
+    with open(pattern_file, 'r') as f:
         lines = f.readlines()
         errors = []
         for line in lines:
@@ -11,6 +12,8 @@ def main():
                 grep = "grep -o \'" + line + "\' " + text_file + " | wc -l"
                 p = subprocess.run(grep, capture_output=True, text=True, shell=True)
                 for algo in ['sliding_window', 'kmp', 'aho_corasick', 'shift_or']:
+                    if(len(line) > 64 and algo == 'shift_or'):
+                            continue
                     pmt = "./utils/pmt -a " + algo + " -c " + line + " " + text_file
                     p1 = subprocess.run(pmt, capture_output=True, text=True, shell=True)
                     if p.stdout != p1.stdout:
